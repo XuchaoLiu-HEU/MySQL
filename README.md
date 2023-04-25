@@ -1,5 +1,7 @@
 # oracle 练习题
 
+[常用命令](https://blog.csdn.net/K346K346/article/details/52106044?ops_request_misc=&request_id=&biz_id=102&utm_term=mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-52106044.nonecase&spm=1018.2226.3001.4187)
+
 ```mysql
 -- 1.查询语句
 SELECT empno,ename,job,mgr,hiredate,sal,comm,deptno FROM emp;
