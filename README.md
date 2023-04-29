@@ -3,6 +3,30 @@
 [常用命令](https://blog.csdn.net/K346K346/article/details/52106044?ops_request_misc=&request_id=&biz_id=102&utm_term=mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-52106044.nonecase&spm=1018.2226.3001.4187)
 
 ```mysql
+-- 1. 显示所有数据库列表
+show DATABASES;
+-- 2. 创建数据库
+create DATABASE user_info;
+-- 3. 选择要使用的数据库
+use user_info;
+-- 4. 显示当前数据库中的所有表
+show TABLES;
+-- 5. 创建表
+create TABLE user(
+		id INT PRIMARY KEY AUTO_INCREMENT,
+		username VARCHAR(50) UNIQUE NOT NULL,
+		password VARCHAR(50) NOT NULL,
+		email VARCHAR(50) UNIQUE NOT NULL
+);
+-- 6. 显示当前数据库中的所有表
+show TABLES;
+-- 7. 显示指定表的结构
+DESCRIBE user;
+```
+
+
+
+```mysql
 -- 1.查询语句
 SELECT empno,ename,job,mgr,hiredate,sal,comm,deptno FROM emp;
 SELECT ename,job,mgr,hiredate,sal,comm,deptno FROM emp;
